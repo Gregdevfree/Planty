@@ -169,6 +169,14 @@ Version: 1.0
     text-align: center;
     margin-top: 20px;
     transition: all 0ms ease-in-out;
+    width: 198px;
+    height: 55px;
+    top: 1164px;
+    left: 631px;
+    padding: 9px 57px 9px 56px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
 }
 
 /* Style pour le lien dans le footer */
