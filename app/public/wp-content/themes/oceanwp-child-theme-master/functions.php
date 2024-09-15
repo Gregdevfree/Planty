@@ -75,4 +75,3 @@ function add_commander_button_to_menu( $items, $args ) {
     return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_commander_button_to_menu', 10, 2 );
-

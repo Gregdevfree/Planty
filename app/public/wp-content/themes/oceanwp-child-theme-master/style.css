@@ -10,6 +10,9 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
+
+
+
 /* Position du logo */
 #site-logo {
     position: relative;
@@ -48,7 +51,7 @@ Version: 1.0
 }
 
 
-/* Styliser le bouton Commander */
+/* Styles du le bouton Commander dans barre de navigation */
 .commander-button {
     display: flex; /* Utilisation de flexbox pour faciliter le centrage */
     justify-content: center; /* Centrer horizontalement */
@@ -58,7 +61,7 @@ Version: 1.0
     color: #FFFFFF;
     background: #DC9F96;
     cursor: pointer;
-    transition: all 0ms ease-in-out; /* Animation instantanée */
+    transition: instant; /* Animation instantanée */
 }
 
 .commander-button .text-wrap {
@@ -71,7 +74,7 @@ Version: 1.0
     opacity: 1;
     color: #FFFFFF;
     transform: translate(0px, 0px);
-    transition: 0ms ease-in-out;
+    transition: instant;
 }
 
 /* Forcer le texte du bouton Commander à être blanc */
@@ -90,11 +93,14 @@ Version: 1.0
     left: 1204px;
 }
 
+
 /* Zone Commande */
 .commande-zone {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-left: 76px;
+    margin-right: 76px; 
 }
 
 
@@ -113,7 +119,6 @@ Version: 1.0
 }
 
 /* Applique le centrage au texte à l'intérieur des inputs */
-
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -132,6 +137,12 @@ Version: 1.0
     width: 860px;
     border: 1px solid #FFFFFF;
     margin-bottom: 20px;
+    width: 860px;
+    height: 0px;
+    top: 618px;
+    left: 292px;
+    gap: 0px;
+    opacity: 0px;
 }
 
 /* Zone principale : Vos informations et Livraison */
@@ -158,26 +169,34 @@ Version: 1.0
 
 /* Trait de séparation vertical */
 .vertical-separator {
-    border-left: 1px solid #FFFFFF;
-    height: 300px;
-    margin-left: 10px;
+    width: 1px;
+    height: 447px;
+    top: 673px;
+    left: 720px;
+    gap: 0px;
+    border: 1px solid #FFFFFF;
+    opacity: 0px;
+    margin-bottom: 20px;
 }
 
 
 /* Bouton de soumission */
 .submit-container {
+    display: block;
+    margin: 0 auto;
     text-align: center;
+    align-items: center;
     margin-top: 20px;
-    transition: all 0ms ease-in-out;
+    transition: instant;
     width: 198px;
     height: 55px;
     top: 1164px;
     left: 631px;
-    padding: 9px 57px 9px 56px;
     gap: 0px;
     border-radius: 5px 0px 0px 0px;
     opacity: 0px;
 }
+
 
 /* Style pour le lien dans le footer */
 .footer-container {
@@ -196,4 +215,5 @@ Version: 1.0
     font-weight: 700;
     font-size: 13px;
     line-height: 15.6px;
+    transition: instant;
 }
