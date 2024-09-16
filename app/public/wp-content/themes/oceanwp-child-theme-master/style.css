@@ -27,6 +27,7 @@ Version: 1.0
     font-size: 16px;
     line-height: 19.2px;
     transition: instant;
+    opacity: 0px;
 }
 
 .menu_item a:hover {
@@ -42,6 +43,7 @@ Version: 1.0
     font-size: 16px;
     line-height: 19.2px;
     transition: instant;
+    opacity: 0px;
 }
 
 .menu-item-494 a:hover {
@@ -58,14 +60,15 @@ Version: 1.0
     align-items: center; /* Centrer verticalement */
     width: 236px;
     height: 80px;
+    margin-left: 30px;
     color: #FFFFFF;
     background: #DC9F96;
     cursor: pointer;
     transition: instant; /* Animation instantanée */
-}
-
-.commander-button .text-wrap {
-    opacity: 1;
+    font-weight: 700 !important; /* Utilisation de !important pour écraser les styles du thème */
+    font-size: 16px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
 }
 
 /* Effet de survol */
@@ -77,30 +80,21 @@ Version: 1.0
     transition: instant;
 }
 
-/* Forcer le texte du bouton Commander à être blanc */
-.commander-button,
-.commander-button:hover,
-.commander-button .text-wrap {
-    font-weight: 700 !important; /* Utilisation de !important pour écraser les styles du thème */
-    font-size: 16px !important;
-    text-align: center !important;
-    color: #FFFFFF !important;
-}
 
-/* Position du bouton */
-.menu-link-commander-wrapper {
-    position: relative;
-    left: 1204px;
+/* Centrage bouton Envoyer */
+input.wpcf7-form-control.wpcf7-submit {
+    display: block !important;
+    margin: auto !important;
 }
-
 
 /* Zone Commande */
 .commande-zone {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-left: 76px;
     margin-right: 76px; 
+    margin-top: 20px;
 }
 
 
@@ -136,13 +130,14 @@ Version: 1.0
 .horizontal-separator {
     width: 860px;
     border: 1px solid #FFFFFF;
-    margin-bottom: 20px;
     width: 860px;
-    height: 0px;
+    height: 1px;
     top: 618px;
     left: 292px;
-    gap: 0px;
+    gap: 20px;
     opacity: 0px;
+    margin-bottom: 60px;
+    transform: translateY(-55px);
 }
 
 /* Zone principale : Vos informations et Livraison */
@@ -150,17 +145,29 @@ Version: 1.0
     display: flex;
     justify-content: space-between;
 }
-  
+.info-livraison-zone .livraison {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Pousse les champs vers le bord droit */
+}
+
 .informations, .livraison {
-    width: 48%;
+    width: 45%;
 }
 
 /* Titre de section */
 .section-title {
     font-size: 30px;
     font-weight: 700;
+    line-height: 36px;
     color: #FFFFFF;
+    text-align: left; /* Aligner le texte à gauche */
+    margin-left: 0;
+    align-self: flex-start; /* Assurer que le titre se positionne à gauche dans le conteneur flex */
+    width: 100%;
+    transform: translateY(-2px);
 }
+
 
 /* Label en blanc */
 .label-white {
@@ -171,12 +178,12 @@ Version: 1.0
 .vertical-separator {
     width: 1px;
     height: 447px;
-    top: 673px;
-    left: 720px;
-    gap: 0px;
+    margin-top: 5px;
+    top: 200px;
+    left: 100px;
+    gap: 10px;
     border: 1px solid #FFFFFF;
     opacity: 0px;
-    margin-bottom: 20px;
 }
 
 
