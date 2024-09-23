@@ -10,7 +10,7 @@
 	</main><!-- #main -->
 
 <footer class="footer-menu">
-    <div class="footer-container"><!--footer page commander-->
+    <div class="footer-container">
         <p class="footer-text"><a href="<?php echo home_url(); ?>">Mentions légales</a></p>
     </div>
     <?php wp_footer(); ?>

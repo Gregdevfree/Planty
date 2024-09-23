@@ -88,55 +88,137 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 /* Zone Commande */
+
+/* Trait de séparation horizontal sous COMMANDER */
+.elementor-divider-separator {
+    border: 1px solid #FFFFFF;
+    opacity: 0px;
+}
+
 .commande-zone {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 900px;
     margin-bottom: 60px;
-    margin-left: 76px;
-    margin-right: 76px; 
+    margin-left: 0px;
+    margin-right: 0px; 
     margin-top: 20px;
 }
 
+/* Conteneur global pour chaque fruit et son input */
+.fruit-container {
+    display: flex;
+    flex-direction: column; /* Pour empiler l'image et l'input verticalement */
+    justify-content: space-between;
+    align-items: center; /* Centre l'image et l'input horizontalement */
+}
 
+/* Style de chaque fruit */
+.fruit-img {
+    height: 128.97px;
+    object-fit: contain;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Dimensions spécifiques pour chaque fruit */
+.fruit-img img[alt="Fraise"] {
+    width: 192.53px;
+    height: 128.36px;
+}
+.fruit-img[alt="Fraise"] {
+    height: 128.36px; /* Hauteur du div alignée avec l'image */
+}
+
+.fruit-img img[alt="Pamplemousse"] {
+    width: 193.21px;
+    height: 128.97px;
+}
+
+.fruit-img[alt="Pamplemousse"] {
+    height: 128.97px;
+}
+
+.fruit-img img[alt="Framboise"] {
+    width: 193.06px;
+    height: 128.71px;
+}
+
+.fruit-img[alt="Framboise"] {
+    height: 128.71px;
+}
+
+
+.fruit-img img[alt="Citron"] {
+    width: 193.29px;
+    height: 128.86px;
+}
+.fruit-img[alt="Citron"] {
+    height: 128.86px;
+}
+
+/* Titre au centre de l'image */
+.fruit-img h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Conteneur pour l'input centré sous chaque image */
+.input-container {
+    margin-top: 5mm;
+    text-align: center;
+}
+
+/* Style pour les inputs */
 .quantity-input {
     font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
     font-weight: 400 !important;
-    line-height: 19.36px!important;
+    line-height: 19.36px !important;
     text-align: center !important;
     width: 39px !important;
     height: 56px !important;
-    border-radius: 0 !important;/* Supprime les coins arrondis */
-    padding: 0 !important; /* Supprime les marges internes */
-    margin: 0 !important; /* Supprime les marges externes */
-    box-sizing: border-box !important; /* Inclut les bordures et le padding dans la largeur/hauteur */
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
 }
 
 /* Applique le centrage au texte à l'intérieur des inputs */
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .quantity-input[type=number] {
-  -moz-appearance: textfield;
-  -ms-appearance: textfield;
-  appearance: textfield;
+    -moz-appearance: textfield;
+    -ms-appearance: textfield;
+    appearance: textfield;
 }
-
 
 /* Trait de séparation horizontal */
 .horizontal-separator {
     width: 860px;
-    border: 1px solid #FFFFFF;
-    width: 860px;
-    height: 1px;
     top: 618px;
     left: 292px;
+    border: 1px solid #FFFFFF;
     gap: 20px;
     opacity: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     transform: translateY(-55px);
 }
 
@@ -176,7 +258,6 @@ input.wpcf7-form-control.wpcf7-submit {
 
 /* Trait de séparation vertical */
 .vertical-separator {
-    width: 1px;
     height: 447px;
     margin-top: 5px;
     top: 200px;
@@ -203,11 +284,14 @@ input.wpcf7-form-control.wpcf7-submit {
     border-radius: 5px 0px 0px 0px;
     opacity: 0px;
 }
+/* Footer */
 
 
 /* Style pour le lien dans le footer */
 .footer-container {
     text-align: center; /* Centre le contenu horizontalement */
+    width: 1440px;
+    height: 60px;
 }
 
 .footer-text a {

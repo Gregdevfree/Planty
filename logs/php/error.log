@@ -673,3 +673,27 @@ Stack trace:
 [16-Sep-2024 17:17:16 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
 [16-Sep-2024 17:17:16 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
 [16-Sep-2024 17:17:16 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[17-Sep-2024 15:14:53 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[17-Sep-2024 15:14:53 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[17-Sep-2024 15:14:53 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[17-Sep-2024 15:14:53 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[17-Sep-2024 15:53:20 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[17-Sep-2024 15:53:20 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[17-Sep-2024 15:53:20 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[17-Sep-2024 15:53:20 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[17-Sep-2024 15:53:20 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[17-Sep-2024 15:53:20 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[18-Sep-2024 09:11:33 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[18-Sep-2024 09:11:33 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[18-Sep-2024 09:11:33 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[18-Sep-2024 09:11:33 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[19-Sep-2024 17:45:42 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[19-Sep-2024 17:45:42 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[19-Sep-2024 17:45:42 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[19-Sep-2024 17:45:42 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[19-Sep-2024 17:45:42 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[19-Sep-2024 17:45:42 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[23-Sep-2024 15:40:53 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\themes\oceanwp-child-theme-master\functions.php on line 80
+[23-Sep-2024 15:40:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Gregory\Local Sites\planty\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[23-Sep-2024 15:40:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Gregory\Local Sites\planty\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[23-Sep-2024 15:41:52 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\themes\oceanwp-child-theme-master\functions.php on line 80
