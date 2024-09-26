@@ -292,6 +292,8 @@ input.wpcf7-form-control.wpcf7-submit {
     text-align: center; /* Centre le contenu horizontalement */
     width: 1440px;
     height: 60px;
+    padding-top: 17px;
+    background-color: #FFFFFF;
 }
 
 .footer-text a {

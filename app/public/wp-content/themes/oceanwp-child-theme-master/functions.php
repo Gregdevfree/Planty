@@ -77,4 +77,3 @@ function add_commander_button_to_menu( $items, $args ) {
 add_filter( 'wp_nav_menu_items', 'add_commander_button_to_menu', 10, 2 );
 
 /* footer */
-
