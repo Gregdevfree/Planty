@@ -286,12 +286,94 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 /* Footer */
 
-.footer-home {
+.image-list {
+    list-style-type: none; /* Supprime les puces de la liste */
+    display: flex; /* Aligne les éléments en ligne */
+    justify-content: space-between; /* Espacement identique entre les images */
+    width: 1440px;
+    height: 162px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Masque tout débordement d'image */
+}
 
+.image-list li {
+    margin: 0; /* Espace horizontal entre les images */
+    flex-shrink: 0; /* Empêche la réduction des images */
+    width: 136.75px; /* Largeur fixe pour chaque image */
+    height: 277.517px; /* Hauteur fixe pour chaque image */
+}
+
+
+.image-list img {
+    top: 0; /* Aligne l'image en haut */
+    left: 0; /* Aligne l'image à gauche */
+    width: 100%; /* L'image prend toute la largeur de son conteneur */
+    height: 100%; /* L'image prend toute la hauteur de son conteneur */
+    object-fit: cover; /* Recadre l'image pour remplir le conteneur */
+}
+
+.image-list li:nth-child(1) img { margin-left: -50px;}
+.image-list li:nth-child(2) img { margin-left: -95px;}
+.image-list li:nth-child(3) img { margin-left: -140px;}
+.image-list li:nth-child(4) img { margin-left: -185px;}
+.image-list li:nth-child(5) img { margin-left: -230px;}
+.image-list li:nth-child(6) img { margin-left: -275px;}
+.image-list li:nth-child(7) img { margin-left: -320px;}
+.image-list li:nth-child(8) img { margin-left: -365px;}
+.image-list li:nth-child(9) img { margin-left: -410px;}
+.image-list li:nth-child(10) img { margin-left: -455px;}
+.image-list li:nth-child(11) img { margin-left: -500px;}
+.image-list li:nth-child(12) img { margin-left: -545px;}
+.image-list li:nth-child(13) img { margin-left: -590px;}
+.image-list li:nth-child(14) img { margin-left: -635px;}
+.image-list li:nth-child(15) img { margin-left: -680px;}
+.image-list li:nth-child(16) img { margin-left: -724px;}
+
+.footer-home .image-list li:nth-child(2) img, .image-list li:nth-child(6) img, .image-list li:nth-child(9) img, .image-list li:nth-child(13) img {
+    margin-top: 6px;
+}
+  
+.footer-home .image-list li:nth-child(1) img, .image-list li:nth-child(3) img, .image-list li:nth-child(5) img, .image-list li:nth-child(8) img, .image-list li:nth-child(10) img, .image-list li:nth-child(12) img, .image-list li:nth-child(14) img, .image-list li:nth-child(16) img {
+    margin-top: 24px;
+}
+  
+.footer-home .image-list li:nth-child(4) img, .image-list li:nth-child(7) img, .image-list li:nth-child(11) img, .image-list li:nth-child(15) img {
+    margin-top: 48px;
+}
+  
+  
+.footer-nous-rencontrer .image-list li:nth-child(2) img, .image-list li:nth-child(6) img, .image-list li:nth-child(9) img, .image-list li:nth-child(13) img {
+    margin-top: 6px;
+}
+
+.footer-nous-rencontrer .image-list li:nth-child(1) img, .image-list li:nth-child(3) img, .image-list li:nth-child(5) img, .image-list li:nth-child(8) img, .image-list li:nth-child(10) img, .image-list li:nth-child(12) img, .image-list li:nth-child(14) img, .image-list li:nth-child(16) img {
+    margin-top: 24px;
+}
+
+.footer-nous-rencontrer .image-list li:nth-child(4) img, .image-list li:nth-child(7) img, .image-list li:nth-child(11) img, .image-list li:nth-child(15) img {
+    margin-top: 48px;
+}
+  
+.footer-home 
+.footer-nous-rencontrer {
+    display: flex; /* Utilise Flexbox pour le conteneur */
+    justify-content: space-between;
+    overflow: hidden; /* Masque tout débordement */
+}
+
+.footer-home {
+background-color: #FFFFFF;
+width: 100%;
+height: 162px;
+margin-top: 78px;
 }
 
 .footer-nous-rencontrer {
-
+background-color: #ECE2DA;
+width: 100%;
+height: 162px;
+margin-top: -30px;
 }
 
 
@@ -299,7 +381,7 @@ input.wpcf7-form-control.wpcf7-submit {
 /* Style pour le lien de "mentions légales" dans le footer */
 .footer-container {
     text-align: center; /* Centre le contenu horizontalement */
-    width: 1440px;
+    width: 100%;
     height: 60px;
     padding-top: 17px;
     background-color: #FFFFFF;
