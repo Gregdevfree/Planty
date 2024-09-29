@@ -84,7 +84,7 @@ Version: 1.0
 /* Centrage bouton Envoyer */
 input.wpcf7-form-control.wpcf7-submit {
     display: block !important;
-    margin: auto !important;
+    margin-left: 83px !important;
 }
 
 /* Zone Commande */
@@ -271,8 +271,8 @@ input.wpcf7-form-control.wpcf7-submit {
 /* Bouton de soumission */
 .submit-container {
     display: block;
-    margin: 0 auto;
     text-align: center;
+    margin-left: 255px;
     align-items: center;
     margin-top: 20px;
     transition: instant;
@@ -286,8 +286,17 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 /* Footer */
 
+.footer-home {
 
-/* Style pour le lien dans le footer */
+}
+
+.footer-nous-rencontrer {
+
+}
+
+
+
+/* Style pour le lien de "mentions légales" dans le footer */
 .footer-container {
     text-align: center; /* Centre le contenu horizontalement */
     width: 1440px;
