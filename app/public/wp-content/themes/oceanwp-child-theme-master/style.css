@@ -9,16 +9,66 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+/*Responsive textes*/
+h1 { font-size: 48px; }
+h2 { font-size: 38px; }
+h3 { font-size: 30px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+p {font-size: 20px; }
 
-
-
+  
+@media (max-width: 320px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 14px; }
+    h5 { font-size: 12px; }
+    p {font-size: 12px; }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 14px; }
+    p {font-size: 14px; }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    h1 { font-size: 38px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 26px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 15px; }
+    p {font-size: 18px; }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    h1 { font-size: 42px; }
+    h2 { font-size: 34px; }
+    h3 { font-size: 28px; }
+    h4 { font-size: 19px; }
+    h5 { font-size: 16px; }
+    p {font-size: 18px; }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    h1 { font-size: 46px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 29px; }
+    h4 { font-size: 20px; }
+    h5 { font-size: 16px; }
+    p {font-size: 18px; }
+  }
+  
 
 /* Position du logo */
 #site-logo {
     position: relative;
     left: 37px;
 }
-
 
 /* Style pour le lien Admin */
 .menu_item a {
@@ -70,6 +120,14 @@ Version: 1.0
     text-align: center !important;
     color: #FFFFFF !important;
 }
+/*responsive bouton commander dans menu hamburger*/
+@media screen and (max-width: 959px) {
+    .commander-button {
+        width: 200px;
+        height: 60px;
+    }
+  }
+
 
 /* Effet de survol */
 .commander-button:hover {
@@ -162,7 +220,7 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 /* Titre au centre de l'image */
-.fruit-img h3 {
+.fruit-img h4 {
     position: absolute;
     top: 50%;
     left: 50%;
