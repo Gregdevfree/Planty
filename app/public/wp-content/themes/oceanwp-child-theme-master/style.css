@@ -9,6 +9,24 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+@media (max-width: 319px) {
+    body {
+        display: none;
+    }
+
+    body::before {
+        content: "Votre écran est trop petit pour afficher ce site.";
+        display: block;
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        color: #000;
+        font-size: 16px;
+    }
+}
+
+
 /*Responsive textes*/
 h1 { font-size: 48px; }
 h2 { font-size: 38px; }
@@ -17,51 +35,51 @@ h4 { font-size: 20px; }
 h5 { font-size: 16px; }
 p {font-size: 20px; }
 
-  
-@media (max-width: 320px) {
+ /* Styles pour petits écrans mobiles */
+@media (min-width: 320px) and (max-width: 480px) {
     h1 { font-size: 28px; }
-    h2 { font-size: 22px; }
+    h2 { font-size: 24px; }
     h3 { font-size: 18px; }
     h4 { font-size: 14px; }
     h5 { font-size: 12px; }
-    p {font-size: 12px; }
-  }
-  
-  @media (min-width: 321px) and (max-width: 480px) {
+    p {font-size: 14px; }
+}
+/* Styles pour grands écrans mobiles */
+@media (min-width: 481px) and (max-width: 767px) {
     h1 { font-size: 32px; }
     h2 { font-size: 26px; }
     h3 { font-size: 22px; }
     h4 { font-size: 16px; }
     h5 { font-size: 14px; }
     p {font-size: 14px; }
-  }
-  
-  @media (min-width: 481px) and (max-width: 768px) {
+}
+/* Styles pour tablettes */ 
+@media (min-width: 768px) and (max-width: 1024px) {
     h1 { font-size: 38px; }
     h2 { font-size: 30px; }
     h3 { font-size: 26px; }
     h4 { font-size: 18px; }
     h5 { font-size: 15px; }
-    p {font-size: 18px; }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
+    p {font-size: 15px; }
+}
+/* Styles pour tablettes larges et petits laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
     h1 { font-size: 42px; }
     h2 { font-size: 34px; }
     h3 { font-size: 28px; }
     h4 { font-size: 19px; }
     h5 { font-size: 16px; }
     p {font-size: 18px; }
-  }
-  
-  @media (min-width: 1025px) and (max-width: 1200px) {
+}
+/* Styles pour grands écrans */ 
+@media (min-width: 1281px) {
     h1 { font-size: 46px; }
     h2 { font-size: 36px; }
     h3 { font-size: 29px; }
     h4 { font-size: 20px; }
     h5 { font-size: 16px; }
     p {font-size: 18px; }
-  }
+}
   
 
 /* Position du logo */
@@ -121,12 +139,12 @@ p {font-size: 20px; }
     color: #FFFFFF !important;
 }
 /*responsive bouton commander dans menu hamburger*/
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
     .commander-button {
         width: 200px;
         height: 60px;
     }
-  }
+}
 
 
 /* Effet de survol */
@@ -138,12 +156,52 @@ p {font-size: 20px; }
     transition: instant;
 }
 
+/*Formulaire contact page Nous rencontrer*/
+/* Pour les résolutions à partir de 320px jusqu'à 767px */
+@media (min-width: 320px) and (max-width: 767px) {
+  
+    /* Champs de texte et textarea (wpcf7) */
+    .elementor-element-2adc147 .wpcf7-form .wpcf7-text,
+    .elementor-element-2adc147 .wpcf7-form .wpcf7-email,
+    .elementor-element-2adc147 .wpcf7-form .wpcf7-textarea {
+        width: 100%; /* Ajuste la largeur des champs à 80% de la taille de l'écran */
+        max-width: 100%; /* S'assure que les champs ne dépassent pas la largeur de leur conteneur */
+        height: auto; /* Permet à la hauteur de s'adapter selon le contenu */
+        margin: 10px auto; /* Centrer les champs */
+        display: block; /* Force les champs à être affichés comme bloc */
+        box-sizing: border-box; /* Inclure les bordures et padding dans la largeur */
+    }
+  
+    /* Aligner les labels à gauche */
+    .elementor-element-2adc147 .wpcf7-form label {
+        text-align: left; /* Alignement à gauche des labels */
+        display: block;
+        margin-bottom: 5px; /* Ajouter un peu d'espacement en bas des labels */
+    }
+  
+/* Centrage du bouton de soumission */
+    .elementor-element-2adc147 .wpcf7-form .wpcf7-submit {
+        display: block; /* Forcer le bloc pour occuper toute la largeur disponible */
+        margin: 0 auto; /* Auto pour le centrage horizontal */
+        text-align: center; /* S'assurer que le texte du bouton est centré */
+        width: auto; /* S'assurer que la largeur n'est pas restreinte */
+    }
 
-/* Centrage bouton Envoyer */
-input.wpcf7-form-control.wpcf7-submit {
-    display: block !important;
-    margin-left: 83px !important;
+/* Si le conteneur parent du bouton a des restrictions de taille */
+    .elementor-element-2adc147 .wpcf7-form {
+        text-align: center; /* S'assurer que le conteneur centre le bouton */
+    }
+
+    .elementor-element-2adc147 .wpcf7-form .wpcf7-submit {
+        display: inline-block; /* Si nécessaire pour s'assurer que le bouton se centre avec le texte */
+    }
 }
+@media (min-width: 320px) and (max-width: 387px) { 
+    .elementor-element-2adc147 .wpcf7-form .wpcf7-submit {
+        padding: 0 !important; /* Supprimer tous les paddings */
+    }
+}
+
 
 /* Zone Commande */
 
@@ -210,7 +268,6 @@ input.wpcf7-form-control.wpcf7-submit {
     height: 128.71px;
 }
 
-
 .fruit-img img[alt="Citron"] {
     width: 193.29px;
     height: 128.86px;
@@ -233,6 +290,63 @@ input.wpcf7-form-control.wpcf7-submit {
     color: #FFFFFF;
     margin: 0;
 }
+/* Media query pour les résolutions inférieures à 768px */
+@media (max-width: 768px) {
+
+    /* Alignement à gauche des titres h3 et h4 */
+    .fruit-img h3, h4 {
+      text-align: left;
+      margin-left: 4px;
+      margin-right: 0;
+    }
+}
+
+/* Media query pour les résolutions entre 320px et 767px */
+@media (max-width: 767px) {
+  
+    /* Aligner les éléments fruit-container sur une seule colonne */
+    .commande-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centre les éléments horizontalement */
+    }
+  
+    .fruit-container {
+      width: 100%; /* Prend toute la largeur du parent */
+      max-width: 300px; /* Limite la largeur maximale pour chaque fruit */
+      margin-bottom: 20px; /* Espace entre chaque fruit */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centre le contenu de chaque fruit-container */
+      justify-content: center;
+    }
+  
+    .fruit-img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px; /* Espace entre l'image et le titre */
+    }
+  
+    .fruit-img img {
+      width: 100%; /* L'image prend la largeur du conteneur */
+      max-width: 150px; /* Limite la taille maximale de l'image */
+    }
+  
+    h4 {
+      text-align: center; /* Centre le texte des titres des fruits */
+    }
+  
+    .input-container {
+      display: flex;
+      justify-content: center; /* Centre les champs de saisie */
+      width: 100%;
+    }
+  
+    .quantity-input {
+      width: 50px; /* Ajuste la taille du champ de quantité */
+    }
+  }
+  
 
 /* Conteneur pour l'input centré sous chaque image */
 .input-container {
@@ -308,6 +422,32 @@ input.wpcf7-form-control.wpcf7-submit {
     transform: translateY(-2px);
 }
 
+/* Media query pour les résolutions inférieures à 768px */
+@media (min-width: 320px) and (max-width: 767px) {
+/* Alignement des sections "informations" et "livraison" en une seule colonne */
+    .info-livraison-zone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important; /* Aligne tout à gauche */
+    }
+
+/* Ajustement des inputs texte pour les informations personnelles */
+    .informations, .livraison {
+        width: 100%; /* Prend toute la largeur */
+    }
+
+  .informations label, .livraison label {
+        display: block; /* Les labels restent au-dessus des inputs */
+        margin-bottom: 5px;
+    }
+
+  .informations input, .livraison input {
+    width: 100%; /* Les champs prennent toute la largeur */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la taille */
+    margin-bottom: 15px; /* Espacement entre les champs */
+  }
+}
+
 
 /* Label en blanc */
 .label-white {
@@ -324,24 +464,32 @@ input.wpcf7-form-control.wpcf7-submit {
     border: 1px solid #FFFFFF;
     opacity: 0px;
 }
-
+/* Media query pour les résolutions inférieures à 768px */
+@media (min-width: 320px) and (max-width: 767px) {
+    /* Cacher le trait de séparation vertical */
+    .vertical-separator {
+      display: none;
+    }
+}
+  
 
 /* Bouton de soumission */
-.submit-container {
-    display: block;
-    text-align: center;
-    margin-left: 255px;
-    align-items: center;
-    margin-top: 20px;
+.wpcf7-submit {
+    display: block; /* Le bouton occupe toute la largeur disponible */
+    margin: auto; /* Centre le bouton horizontalement */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte du bouton */
+    max-width: 198px; /* Largeur maximale du bouton */
+    width: 100%; /* Le bouton prend 100% de l'espace disponible */
+    font-size: 16px; /* Ajuster la taille du texte pour les grandes résolutions */
+    text-align: center; /* Centre le texte à l'intérieur du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Enlever les bordures */
+    border-radius: 5px; /* Coins arrondis du bouton */
     transition: instant;
-    width: 198px;
-    height: 55px;
-    top: 1164px;
-    left: 631px;
-    gap: 0px;
-    border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
 }
+
 /* Footer */
 
 .image-list {
