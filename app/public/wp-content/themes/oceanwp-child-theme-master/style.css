@@ -46,8 +46,8 @@ p {font-size: 20px; }
 }
 /* Styles pour grands écrans mobiles */
 @media (min-width: 481px) and (max-width: 767px) {
-    h1 { font-size: 32px; }
-    h2 { font-size: 26px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
     h3 { font-size: 22px; }
     h4 { font-size: 16px; }
     h5 { font-size: 14px; }
@@ -55,30 +55,30 @@ p {font-size: 20px; }
 }
 /* Styles pour tablettes */ 
 @media (min-width: 768px) and (max-width: 1024px) {
-    h1 { font-size: 38px; }
+    h1 { font-size: 36px; }
     h2 { font-size: 30px; }
     h3 { font-size: 26px; }
     h4 { font-size: 18px; }
     h5 { font-size: 15px; }
-    p {font-size: 15px; }
+    p {font-size: 16px; }
 }
 /* Styles pour tablettes larges et petits laptops */
 @media (min-width: 1025px) and (max-width: 1280px) {
     h1 { font-size: 42px; }
-    h2 { font-size: 34px; }
+    h2 { font-size: 32px; }
     h3 { font-size: 28px; }
     h4 { font-size: 19px; }
     h5 { font-size: 16px; }
-    p {font-size: 18px; }
+    p {font-size: 16px; }
 }
 /* Styles pour grands écrans */ 
 @media (min-width: 1281px) {
     h1 { font-size: 46px; }
     h2 { font-size: 36px; }
-    h3 { font-size: 29px; }
+    h3 { font-size: 30px; }
     h4 { font-size: 20px; }
     h5 { font-size: 16px; }
-    p {font-size: 18px; }
+    p {font-size: 16px; }
 }
   
 
@@ -156,49 +156,85 @@ p {font-size: 20px; }
     transition: instant;
 }
 
+
 /*Formulaire contact page Nous rencontrer*/
-/* Pour les résolutions à partir de 320px jusqu'à 767px */
-@media (min-width: 320px) and (max-width: 767px) {
-  
-    /* Champs de texte et textarea (wpcf7) */
-    .elementor-element-2adc147 .wpcf7-form .wpcf7-text,
-    .elementor-element-2adc147 .wpcf7-form .wpcf7-email,
-    .elementor-element-2adc147 .wpcf7-form .wpcf7-textarea {
-        width: 100%; /* Ajuste la largeur des champs à 80% de la taille de l'écran */
-        max-width: 100%; /* S'assure que les champs ne dépassent pas la largeur de leur conteneur */
-        height: auto; /* Permet à la hauteur de s'adapter selon le contenu */
-        margin: 10px auto; /* Centrer les champs */
-        display: block; /* Force les champs à être affichés comme bloc */
-        box-sizing: border-box; /* Inclure les bordures et padding dans la largeur */
-    }
-  
-    /* Aligner les labels à gauche */
-    .elementor-element-2adc147 .wpcf7-form label {
-        text-align: left; /* Alignement à gauche des labels */
-        display: block;
-        margin-bottom: 5px; /* Ajouter un peu d'espacement en bas des labels */
-    }
-  
-/* Centrage du bouton de soumission */
-    .elementor-element-2adc147 .wpcf7-form .wpcf7-submit {
-        display: block; /* Forcer le bloc pour occuper toute la largeur disponible */
-        margin: 0 auto; /* Auto pour le centrage horizontal */
-        text-align: center; /* S'assurer que le texte du bouton est centré */
-        width: auto; /* S'assurer que la largeur n'est pas restreinte */
+/* Conteneur du formulaire */
+.custom-form {
+    position: relative; /* Pour permettre à l'image de se superposer au formulaire */
+    display: flex;
+    flex-direction: column; /* Pour aligner les champs en colonne */
+    align-items: center; /* Centrer horizontalement les champs dans le conteneur */
+    justify-content: center;
+    width: 100%;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire dans la page */
+    padding: 20px;
+    box-sizing: border-box; /* Inclure padding dans la largeur totale */
+    z-index: 10; /* Le formulaire doit avoir un z-index plus élevé que l'image */
+}
+
+/* Garder les labels alignés à gauche */
+.custom-form label {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    text-align: left; /* Alignement à gauche */
+    margin-bottom: 10px;
+}
+
+/* Styliser les champs input et textarea */
+.custom-form input, .custom-form textarea {
+    width: 100%; /* Les champs prennent toute la largeur du formulaire */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Centrer le bouton de soumission */
+.custom-form .wpcf7-submit {
+    display: block;
+    width: auto; /* Le bouton prend sa largeur normale */
+    margin: 0 auto !important; /* Centrer le bouton horizontalement */
+}
+
+/* Media Queries pour garder la proportion jusqu'à 320px */
+@media (max-width: 320px) {
+    .custom-form {
+        max-width: 90%; /* Réduire la largeur du formulaire pour s'adapter */
     }
 
-/* Si le conteneur parent du bouton a des restrictions de taille */
-    .elementor-element-2adc147 .wpcf7-form {
-        text-align: center; /* S'assurer que le conteneur centre le bouton */
-    }
-
-    .elementor-element-2adc147 .wpcf7-form .wpcf7-submit {
-        display: inline-block; /* Si nécessaire pour s'assurer que le bouton se centre avec le texte */
+    .custom-form input, .custom-form textarea {
+        padding: 8px;
     }
 }
-@media (min-width: 320px) and (max-width: 387px) { 
-    .elementor-element-2adc147 .wpcf7-form .wpcf7-submit {
-        padding: 0 !important; /* Supprimer tous les paddings */
+
+/* Positionner l'image en bas à gauche, en-dessous du formulaire */
+.custom-form .form-image {
+    position: absolute;
+    bottom: 94px;
+    left: -86px;
+    width: 200px; /* Taille de l'image, ajustez selon vos besoins */
+    height: auto; /* Pour que l'image conserve ses proportions */
+    z-index: -1; /* Z-index inférieur pour que l'image soit en-dessous du formulaire */
+}
+
+/* Media Queries pour ajuster la taille de l'image sur petits écrans */
+@media (min-width: 481px) and (max-width: 767px) {
+    .custom-form .form-image {
+        width: 150px; /* Réduire la taille de l'image sur les petits écrans */
+        bottom: 94px;
+        left: -50px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .custom-form .form-image {
+        width: 100px; /* Encore plus petit sur les très petites résolutions */
+        bottom: 108px;
+        left: -28px;
+    }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+    .custom-form .form-image {
+        display: none;
     }
 }
 
@@ -290,8 +326,7 @@ p {font-size: 20px; }
     color: #FFFFFF;
     margin: 0;
 }
-/* Media query pour les résolutions inférieures à 768px */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     /* Alignement à gauche des titres h3 et h4 */
     .fruit-img h3, h4 {
@@ -301,8 +336,7 @@ p {font-size: 20px; }
     }
 }
 
-/* Media query pour les résolutions entre 320px et 767px */
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   
     /* Aligner les éléments fruit-container sur une seule colonne */
     .commande-zone {
@@ -394,7 +428,13 @@ p {font-size: 20px; }
     transform: translateY(-55px);
 }
 
-/* Zone principale : Vos informations et Livraison */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .horizontal-separator {
+        width: 737px;
+    }
+}
+
+/* Zone Vos informations et Livraison */
 .info-livraison-zone {
     display: flex;
     justify-content: space-between;
@@ -413,13 +453,41 @@ p {font-size: 20px; }
 .section-title {
     font-size: 30px;
     font-weight: 700;
-    line-height: 36px;
     color: #FFFFFF;
     text-align: left; /* Aligner le texte à gauche */
     margin-left: 0;
     align-self: flex-start; /* Assurer que le titre se positionne à gauche dans le conteneur flex */
     width: 100%;
     transform: translateY(-2px);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .section-title {
+        font-size: 18px; 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .section-title {
+        font-size: 22px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 26px; 
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .section-title {
+        font-size: 28px; 
+    }
+}
+
+@media (min-width: 1281px) {
+    .section-title {
+        font-size: 30px; 
+    }
 }
 
 /* Media query pour les résolutions inférieures à 768px */
@@ -471,7 +539,12 @@ p {font-size: 20px; }
       display: none;
     }
 }
-  
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .vertical-separator {
+        height: 413.5px;
+    }
+}
 
 /* Bouton de soumission */
 .wpcf7-submit {
