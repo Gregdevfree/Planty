@@ -1,3 +1,5 @@
+VERSION CORRIGEE PAR CHAT GPT
+
 /*
 Theme Name: OceanWP Child Theme
 Theme URI: https://oceanwp.org/
@@ -10,58 +12,43 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
-@media (max-width: 319px) {
-    body {
-        display: none;
-    }
 
-    body::before {
-        content: "Votre écran est trop petit pour afficher ce site.";
-        display: block;
-        text-align: center;
-        padding: 20px;
-        background-color: #fff;
-        color: #000;
-        font-size: 16px;
-    }
-}
-
-
-/*Responsive textes*/
+/* Responsive textes - valeurs par défaut pour grands écrans */
 h1 { font-size: 48px; }
 h2 { font-size: 38px; }
 h3 { font-size: 30px; }
 h4 { font-size: 20px; }
 h5 { font-size: 16px; }
-p {font-size: 20px; }
+p { font-size: 20px; }
 
- /* Styles pour petits écrans mobiles */
+/* Styles pour petits écrans mobiles */
 @media (min-width: 320px) and (max-width: 480px) {
     h1 { font-size: 28px; }
     h2 { font-size: 24px; }
     h3 { font-size: 18px; }
-    h4 { font-size: 14px; }
+    h4, p { font-size: 14px; }
     h5 { font-size: 12px; }
-    p {font-size: 14px; }
 }
+
 /* Styles pour grands écrans mobiles */
 @media (min-width: 481px) and (max-width: 767px) {
-    h1 { font-size: 28px; }
-    h2 { font-size: 24px; }
+    h1, h2 { font-size: 28px; }
     h3 { font-size: 22px; }
     h4 { font-size: 16px; }
     h5 { font-size: 14px; }
-    p {font-size: 14px; }
+    p { font-size: 14px; }
 }
-/* Styles pour tablettes */ 
+
+/* Styles pour tablettes */
 @media (min-width: 768px) and (max-width: 1024px) {
     h1 { font-size: 36px; }
     h2 { font-size: 30px; }
     h3 { font-size: 26px; }
     h4 { font-size: 18px; }
     h5 { font-size: 15px; }
-    p {font-size: 16px; }
+    p { font-size: 16px; }
 }
+
 /* Styles pour tablettes larges et petits laptops */
 @media (min-width: 1025px) and (max-width: 1280px) {
     h1 { font-size: 42px; }
@@ -69,18 +56,18 @@ p {font-size: 20px; }
     h3 { font-size: 28px; }
     h4 { font-size: 19px; }
     h5 { font-size: 16px; }
-    p {font-size: 16px; }
+    p { font-size: 16px; }
 }
-/* Styles pour grands écrans */ 
+
+/* Styles pour grands écrans */
 @media (min-width: 1281px) {
     h1 { font-size: 46px; }
     h2 { font-size: 36px; }
     h3 { font-size: 30px; }
     h4 { font-size: 20px; }
     h5 { font-size: 16px; }
-    p {font-size: 16px; }
+    p { font-size: 16px; }
 }
-  
 
 /* Position du logo */
 #site-logo {
@@ -88,57 +75,42 @@ p {font-size: 20px; }
     left: 37px;
 }
 
-/* Style pour le lien Admin */
-.menu_item a {
-    color: black;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19.2px;
-    transition: instant;
-    opacity: 0px;
-}
-
-.menu_item a:hover {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 15.6px;
-}
-
-/* Style pour le lien Nous rencontrer */
+/* Style pour les liens dans le menu */
+.menu_item a,
 .menu-item-494 a {
     color: black;
     font-weight: 600;
     font-size: 16px;
     line-height: 19.2px;
-    transition: instant;
-    opacity: 0px;
+    transition: all 0s;
 }
 
+.menu_item a:hover,
 .menu-item-494 a:hover {
     font-weight: 700;
     font-size: 13px;
     line-height: 15.6px;
 }
 
-
-/* Styles du le bouton Commander dans barre de navigation */
+/* Styles du bouton Commander dans la barre de navigation */
 .commander-button {
-    display: flex; /* Utilisation de flexbox pour faciliter le centrage */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    display: flex; /* flexbox pour faciliter le centrage */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
     width: 236px;
     height: 80px;
     margin-left: 30px;
     color: #FFFFFF;
     background: #DC9F96;
     cursor: pointer;
-    transition: instant; /* Animation instantanée */
+    transition: all 0s; /* Animation instantanée */
     font-weight: 700 !important; /* Utilisation de !important pour écraser les styles du thème */
     font-size: 16px !important;
     text-align: center !important;
     color: #FFFFFF !important;
 }
-/*responsive bouton commander dans menu hamburger*/
+
+/* Responsive bouton Commander dans le menu hamburger */
 @media (max-width: 959px) {
     .commander-button {
         width: 200px;
@@ -146,18 +118,16 @@ p {font-size: 20px; }
     }
 }
 
-
-/* Effet de survol */
+/* Effet de survol du bouton Commander */
 .commander-button:hover {
     background: #C02E44;
     opacity: 1;
     color: #FFFFFF;
     transform: translate(0px, 0px);
-    transition: instant;
+    transition: all 0s;
 }
 
-
-/*Formulaire contact page Nous rencontrer*/
+/* Formulaire contact page Nous rencontrer */
 /* Conteneur du formulaire */
 .custom-form {
     position: relative; /* Pour permettre à l'image de se superposer au formulaire */
@@ -175,13 +145,14 @@ p {font-size: 20px; }
 
 /* Garder les labels alignés à gauche */
 .custom-form label {
-    width: 100%; /* Prendre toute la largeur du conteneur */
-    text-align: left; /* Alignement à gauche */
+    width: 100%;
+    text-align: left;
     margin-bottom: 10px;
 }
 
 /* Styliser les champs input et textarea */
-.custom-form input, .custom-form textarea {
+.custom-form input, 
+.custom-form textarea {
     width: 100%; /* Les champs prennent toute la largeur du formulaire */
     padding: 10px;
     margin-bottom: 15px;
@@ -201,12 +172,13 @@ p {font-size: 20px; }
         max-width: 90%; /* Réduire la largeur du formulaire pour s'adapter */
     }
 
-    .custom-form input, .custom-form textarea {
+    .custom-form input, 
+    .custom-form textarea {
         padding: 8px;
     }
 }
 
-/* Positionner l'image en bas à gauche, en-dessous du formulaire */
+/* Positionnement de l'image en bas à gauche, en-dessous du formulaire */
 .custom-form .form-image {
     position: absolute;
     bottom: 94px;
@@ -217,11 +189,9 @@ p {font-size: 20px; }
 }
 
 /* Media Queries pour ajuster la taille de l'image sur petits écrans */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 359px) {
     .custom-form .form-image {
-        width: 150px; /* Réduire la taille de l'image sur les petits écrans */
-        bottom: 94px;
-        left: -50px;
+        display: none;
     }
 }
 
@@ -232,43 +202,109 @@ p {font-size: 20px; }
         left: -28px;
     }
 }
-@media (min-width: 320px) and (max-width: 359px) {
+
+@media (min-width: 481px) and (max-width: 767px) {
     .custom-form .form-image {
-        display: none;
+        width: 150px; /* Réduire la taille de l'image sur les petits écrans */
+        bottom: 94px;
+        left: -50px;
     }
 }
 
+/* Page Commander */
 
-/* Zone Commande */
-
-/* Trait de séparation horizontal sous COMMANDER */
-.elementor-divider-separator {
-    border: 1px solid #FFFFFF;
-    opacity: 0px;
+/* Décalage titre section Livraison */
+.votre-commande .section-title {
+    position: relative; 
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .votre-commande .section-title {
+        text-align: center;
+    }
+
+    /* Alignement à gauche des titres h3 et h4 */
+    .fruit-img h3, h4 {
+        text-align: left;
+        margin-left: 4px;
+        margin-right: 0;
+    }
+
+    /* Alignement des éléments fruit-container sur une seule colonne */
+    .commande-zone {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important; /* Centre les éléments horizontalement */
+    }
+
+    .fruit-container {
+        width: 100%; /* Prend toute la largeur du parent */
+        max-width: 400px; /* Limite la largeur maximale pour chaque fruit */
+        margin-bottom: 5px; /* Espace entre chaque fruit */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre le contenu de chaque fruit-container */
+        justify-content: center;
+    }
+
+    .fruit-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; /* Espace entre l'image et le titre */
+    }
+
+    .fruit-img img {
+        width: 100%; /* L'image prend la largeur du conteneur */
+        max-width: 240px; /* Limite la taille maximale de l'image */
+    }
+
+    h4 {
+        text-align: center; /* Centre le texte des titres des fruits */
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center; /* Centre les champs de saisie */
+        width: 100%;
+    }
+
+    .quantity-input {
+        width: 50px; /* Ajuste la taille du champ de quantité */
+    }
+
+    /* Alignement à gauche pour tous les éléments */
+    .informations, .livraison, .section-title, .label-white, input, textarea {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .horizontal-separator-1, .horizontal-separator-2 {
+        width: 100%; /* Assure que les séparateurs prennent toute la largeur */
+    }
+
+    .livraison .section-title {
+        left: -18px; /* Décalage spécifique pour la section Livraison */
+    }
+}
+
+/* Style des zones commande et fruit */
 .commande-zone {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    margin: 0 auto;
+    margin: 35px auto 60px;
     max-width: 900px;
-    margin-bottom: 60px;
-    margin-left: 0px;
-    margin-right: 0px; 
-    margin-top: 20px;
 }
 
-/* Conteneur global pour chaque fruit et son input */
 .fruit-container {
     display: flex;
-    flex-direction: column; /* Pour empiler l'image et l'input verticalement */
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; /* Centre l'image et l'input horizontalement */
+    align-items: center;
 }
 
-/* Style de chaque fruit */
 .fruit-img {
     height: 128.97px;
     object-fit: contain;
@@ -277,21 +313,12 @@ p {font-size: 20px; }
     margin-bottom: 0;
 }
 
-/* Dimensions spécifiques pour chaque fruit */
-.fruit-img img[alt="Fraise"] {
-    width: 192.53px;
+.fruit-img img {
     height: 128.36px;
-}
-.fruit-img[alt="Fraise"] {
-    height: 128.36px; /* Hauteur du div alignée avec l'image */
 }
 
 .fruit-img img[alt="Pamplemousse"] {
     width: 193.21px;
-    height: 128.97px;
-}
-
-.fruit-img[alt="Pamplemousse"] {
     height: 128.97px;
 }
 
@@ -300,15 +327,8 @@ p {font-size: 20px; }
     height: 128.71px;
 }
 
-.fruit-img[alt="Framboise"] {
-    height: 128.71px;
-}
-
 .fruit-img img[alt="Citron"] {
     width: 193.29px;
-    height: 128.86px;
-}
-.fruit-img[alt="Citron"] {
     height: 128.86px;
 }
 
@@ -326,84 +346,26 @@ p {font-size: 20px; }
     color: #FFFFFF;
     margin: 0;
 }
-@media (min-width: 320px) and (max-width: 767px) {
 
-    /* Alignement à gauche des titres h3 et h4 */
-    .fruit-img h3, h4 {
-      text-align: left;
-      margin-left: 4px;
-      margin-right: 0;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  
-    /* Aligner les éléments fruit-container sur une seule colonne */
-    .commande-zone {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Centre les éléments horizontalement */
-    }
-  
-    .fruit-container {
-      width: 100%; /* Prend toute la largeur du parent */
-      max-width: 300px; /* Limite la largeur maximale pour chaque fruit */
-      margin-bottom: 20px; /* Espace entre chaque fruit */
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Centre le contenu de chaque fruit-container */
-      justify-content: center;
-    }
-  
-    .fruit-img {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 10px; /* Espace entre l'image et le titre */
-    }
-  
-    .fruit-img img {
-      width: 100%; /* L'image prend la largeur du conteneur */
-      max-width: 150px; /* Limite la taille maximale de l'image */
-    }
-  
-    h4 {
-      text-align: center; /* Centre le texte des titres des fruits */
-    }
-  
-    .input-container {
-      display: flex;
-      justify-content: center; /* Centre les champs de saisie */
-      width: 100%;
-    }
-  
-    .quantity-input {
-      width: 50px; /* Ajuste la taille du champ de quantité */
-    }
-  }
-  
-
-/* Conteneur pour l'input centré sous chaque image */
 .input-container {
     margin-top: 5mm;
     text-align: center;
 }
 
-/* Style pour les inputs */
 .quantity-input {
     font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
     font-weight: 400 !important;
-    line-height: 19.36px !important;
-    text-align: center !important;
-    width: 39px !important;
-    height: 56px !important;
+    line-height: 19.36px;
+    text-align: center;
+    width: 39px;
+    height: 56px;
     border-radius: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 
-/* Applique le centrage au texte à l'intérieur des inputs */
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -416,21 +378,21 @@ p {font-size: 20px; }
     appearance: textfield;
 }
 
-/* Trait de séparation horizontal */
-.horizontal-separator {
+/* Traits de séparation horizontaux */
+.horizontal-separator-1, .horizontal-separator-2 {
     width: 860px;
-    top: 618px;
     left: 292px;
     border: 1px solid #FFFFFF;
     gap: 20px;
     opacity: 0px;
-    margin-bottom: 0px;
+    margin-top: 24px;
+    margin-bottom: -12px;
     transform: translateY(-55px);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .horizontal-separator {
-        width: 737px;
+    .horizontal-separator-1, .horizontal-separator-2 {
+        width: 100%;
     }
 }
 
@@ -438,15 +400,32 @@ p {font-size: 20px; }
 .info-livraison-zone {
     display: flex;
     justify-content: space-between;
+    transition: all 0s;
 }
+
 .info-livraison-zone .livraison {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Pousse les champs vers le bord droit */
+    align-items: flex-end;
 }
 
 .informations, .livraison {
     width: 45%;
+}
+
+/* Media query pour les résolutions inférieures à 768px */
+@media (max-width: 767px) {
+    .info-livraison-zone {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Affichage des colonnes en une seule colonne */
+    .single-column {
+        display: block;
+    }
 }
 
 /* Titre de section */
@@ -454,12 +433,12 @@ p {font-size: 20px; }
     font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left;
     margin-left: 0;
-    align-self: flex-start; /* Assurer que le titre se positionne à gauche dans le conteneur flex */
+    align-self: flex-start;
     width: 100%;
-    transform: translateY(-2px);
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
     .section-title {
         font-size: 18px; 
@@ -492,34 +471,35 @@ p {font-size: 20px; }
 
 /* Media query pour les résolutions inférieures à 768px */
 @media (min-width: 320px) and (max-width: 767px) {
-/* Alignement des sections "informations" et "livraison" en une seule colonne */
+    /* Alignement des sections "informations" et "livraison" en une seule colonne */
     .info-livraison-zone {
         display: flex;
         flex-direction: column;
-        align-items: flex-start !important; /* Aligne tout à gauche */
+        align-items: flex-start;
     }
 
-/* Ajustement des inputs texte pour les informations personnelles */
+ 
+
+    /* Ajustement des inputs texte pour les informations personnelles */
     .informations, .livraison {
-        width: 100%; /* Prend toute la largeur */
+        width: 100%;
     }
 
-  .informations label, .livraison label {
-        display: block; /* Les labels restent au-dessus des inputs */
+    .informations label, .livraison label {
+        display: block;
         margin-bottom: 5px;
     }
 
-  .informations input, .livraison input {
-    width: 100%; /* Les champs prennent toute la largeur */
-    box-sizing: border-box; /* Inclut le padding et la bordure dans la taille */
-    margin-bottom: 15px; /* Espacement entre les champs */
-  }
-}
+    .informations input, .livraison input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
 
-
-/* Label en blanc */
-.label-white {
-    color: #FFFFFF;
+    /* Cacher le trait de séparation vertical */
+    .vertical-separator {
+        display: none;
+    }
 }
 
 /* Trait de séparation vertical */
@@ -532,134 +512,121 @@ p {font-size: 20px; }
     border: 1px solid #FFFFFF;
     opacity: 0px;
 }
-/* Media query pour les résolutions inférieures à 768px */
-@media (min-width: 320px) and (max-width: 767px) {
-    /* Cacher le trait de séparation vertical */
-    .vertical-separator {
-      display: none;
-    }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .vertical-separator {
-        height: 413.5px;
+        height: 372px;
     }
 }
 
 /* Bouton de soumission */
 .wpcf7-submit {
-    display: block; /* Le bouton occupe toute la largeur disponible */
-    margin: auto; /* Centre le bouton horizontalement */
+    display: block;
+    margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px 20px; /* Ajoute de l'espace autour du texte du bouton */
-    max-width: 198px; /* Largeur maximale du bouton */
-    width: 100%; /* Le bouton prend 100% de l'espace disponible */
-    font-size: 16px; /* Ajuster la taille du texte pour les grandes résolutions */
-    text-align: center; /* Centre le texte à l'intérieur du bouton */
-    color: #fff; /* Couleur du texte du bouton */
-    border: none; /* Enlever les bordures */
-    border-radius: 5px; /* Coins arrondis du bouton */
-    transition: instant;
+    padding: 10px 20px;
+    max-width: 198px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0s;
 }
 
 /* Footer */
-
 .image-list {
-    list-style-type: none; /* Supprime les puces de la liste */
-    display: flex; /* Aligne les éléments en ligne */
-    justify-content: space-between; /* Espacement identique entre les images */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
     width: 1440px;
     height: 162px;
     padding: 0;
     margin: 0;
-    overflow: hidden; /* Masque tout débordement d'image */
+    overflow: hidden;
 }
 
 .image-list li {
-    margin: 0; /* Espace horizontal entre les images */
-    flex-shrink: 0; /* Empêche la réduction des images */
-    width: 136.75px; /* Largeur fixe pour chaque image */
-    height: 277.517px; /* Hauteur fixe pour chaque image */
+    margin: 0;
+    flex-shrink: 0;
+    width: 136.75px;
+    height: 277.517px;
 }
-
 
 .image-list img {
-    top: 0; /* Aligne l'image en haut */
-    left: 0; /* Aligne l'image à gauche */
-    width: 100%; /* L'image prend toute la largeur de son conteneur */
-    height: 100%; /* L'image prend toute la hauteur de son conteneur */
-    object-fit: cover; /* Recadre l'image pour remplir le conteneur */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.image-list li:nth-child(1) img { margin-left: -50px;}
-.image-list li:nth-child(2) img { margin-left: -95px;}
-.image-list li:nth-child(3) img { margin-left: -140px;}
-.image-list li:nth-child(4) img { margin-left: -185px;}
-.image-list li:nth-child(5) img { margin-left: -230px;}
-.image-list li:nth-child(6) img { margin-left: -275px;}
-.image-list li:nth-child(7) img { margin-left: -320px;}
-.image-list li:nth-child(8) img { margin-left: -365px;}
-.image-list li:nth-child(9) img { margin-left: -410px;}
-.image-list li:nth-child(10) img { margin-left: -455px;}
-.image-list li:nth-child(11) img { margin-left: -500px;}
-.image-list li:nth-child(12) img { margin-left: -545px;}
-.image-list li:nth-child(13) img { margin-left: -590px;}
-.image-list li:nth-child(14) img { margin-left: -635px;}
-.image-list li:nth-child(15) img { margin-left: -680px;}
-.image-list li:nth-child(16) img { margin-left: -724px;}
+.image-list li:nth-child(1) img { margin-left: -50px; }
+.image-list li:nth-child(2) img { margin-left: -95px; }
+.image-list li:nth-child(3) img { margin-left: -140px; }
+.image-list li:nth-child(4) img { margin-left: -185px; }
+.image-list li:nth-child(5) img { margin-left: -230px; }
+.image-list li:nth-child(6) img { margin-left: -275px; }
+.image-list li:nth-child(7) img { margin-left: -320px; }
+.image-list li:nth-child(8) img { margin-left: -365px; }
+.image-list li:nth-child(9) img { margin-left: -410px; }
+.image-list li:nth-child(10) img { margin-left: -455px; }
+.image-list li:nth-child(11) img { margin-left: -500px; }
+.image-list li:nth-child(12) img { margin-left: -545px; }
+.image-list li:nth-child(13) img { margin-left: -590px; }
+.image-list li:nth-child(14) img { margin-left: -635px; }
+.image-list li:nth-child(15) img { margin-left: -680px; }
+.image-list li:nth-child(16) img { margin-left: -724px; }
 
-.footer-home .image-list li:nth-child(2) img, .image-list li:nth-child(6) img, .image-list li:nth-child(9) img, .image-list li:nth-child(13) img {
-    margin-top: 6px;
-}
-  
-.footer-home .image-list li:nth-child(1) img, .image-list li:nth-child(3) img, .image-list li:nth-child(5) img, .image-list li:nth-child(8) img, .image-list li:nth-child(10) img, .image-list li:nth-child(12) img, .image-list li:nth-child(14) img, .image-list li:nth-child(16) img {
-    margin-top: 24px;
-}
-  
-.footer-home .image-list li:nth-child(4) img, .image-list li:nth-child(7) img, .image-list li:nth-child(11) img, .image-list li:nth-child(15) img {
-    margin-top: 48px;
-}
-  
-  
-.footer-nous-rencontrer .image-list li:nth-child(2) img, .image-list li:nth-child(6) img, .image-list li:nth-child(9) img, .image-list li:nth-child(13) img {
+.footer-home .image-list li:nth-child(2) img,
+.footer-home .image-list li:nth-child(6) img,
+.footer-home .image-list li:nth-child(9) img,
+.footer-home .image-list li:nth-child(13) img {
     margin-top: 6px;
 }
 
-.footer-nous-rencontrer .image-list li:nth-child(1) img, .image-list li:nth-child(3) img, .image-list li:nth-child(5) img, .image-list li:nth-child(8) img, .image-list li:nth-child(10) img, .image-list li:nth-child(12) img, .image-list li:nth-child(14) img, .image-list li:nth-child(16) img {
+.footer-home .image-list li:nth-child(1) img,
+.footer-home .image-list li:nth-child(3) img,
+.footer-home .image-list li:nth-child(5) img,
+.footer-home .image-list li:nth-child(8) img,
+.footer-home .image-list li:nth-child(10) img,
+.footer-home .image-list li:nth-child(12) img,
+.footer-home .image-list li:nth-child(14) img,
+.footer-home .image-list li:nth-child(16) img {
     margin-top: 24px;
 }
 
-.footer-nous-rencontrer .image-list li:nth-child(4) img, .image-list li:nth-child(7) img, .image-list li:nth-child(11) img, .image-list li:nth-child(15) img {
+.footer-home .image-list li:nth-child(4) img,
+.footer-home .image-list li:nth-child(7) img,
+.footer-home .image-list li:nth-child(11) img,
+.footer-home .image-list li:nth-child(15) img {
     margin-top: 48px;
 }
-  
-.footer-home 
-.footer-nous-rencontrer {
-    display: flex; /* Utilise Flexbox pour le conteneur */
+
+.footer-home, .footer-nous-rencontrer {
+    display: flex;
     justify-content: space-between;
-    overflow: hidden; /* Masque tout débordement */
+    overflow: hidden;
 }
 
 .footer-home {
-background-color: #FFFFFF;
-width: 100%;
-height: 162px;
-margin-top: 78px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 162px;
+    margin-top: 78px;
 }
 
 .footer-nous-rencontrer {
-background-color: #ECE2DA;
-width: 100%;
-height: 162px;
-margin-top: -30px;
+    background-color: #ECE2DA;
+    width: 100%;
+    height: 162px;
+    margin-top: -30px;
 }
 
-
-
-/* Style pour le lien de "mentions légales" dans le footer */
 .footer-container {
-    text-align: center; /* Centre le contenu horizontalement */
+    text-align: center;
     width: 100%;
     height: 60px;
     padding-top: 17px;
@@ -671,12 +638,12 @@ margin-top: -30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
-    transition: instant;
+    transition: all 0s;
 }
 
 .footer-text a:hover {
     font-weight: 700;
     font-size: 13px;
     line-height: 15.6px;
-    transition: instant;
+    transition: all 0s;
 }
