@@ -472,7 +472,7 @@ p { font-size: 20px; }
     }
 
     .info-livraison-zone .livraison {
-        margin-left: -16px;
+        margin-left: -18px;
     }
 
     /* Affichage des colonnes en une seule colonne */
@@ -497,7 +497,6 @@ p { font-size: 20px; }
         box-sizing: border-box;
         text-align: left;
         margin-bottom: 15px;
-        padding-left: -50px;
     }
 
     /* Cacher le trait de séparation vertical */
