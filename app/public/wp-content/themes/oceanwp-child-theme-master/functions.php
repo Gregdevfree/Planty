@@ -50,7 +50,6 @@ function nav_menu_add_admin( $items, $args ) {
         // Reconvertir le tableau en chaîne de caractères
         $items = implode('</li>', $menu_items);
     }
-    
     return $items;
 }
 function add_commander_button_to_menu( $items, $args ) {
@@ -59,7 +58,7 @@ function add_commander_button_to_menu( $items, $args ) {
 
         // Définition du bouton HTML pour "Commander"
         $commander_button = '<li id="menu-item-commander" class="menu-item">
-            <a href="http://planty.local/commander/" class="menu-link commander-button">
+            <a href="' . home_url('/commander/') . '" class="menu-link commander-button">
                 <span class="text-wrap">Commander</span>
             </a>
         </li>';

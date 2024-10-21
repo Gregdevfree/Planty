@@ -1878,3 +1878,15 @@ Stack trace:
 [13-Oct-2024 18:18:54 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
 [13-Oct-2024 18:18:54 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
 [13-Oct-2024 18:18:54 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[21-Oct-2024 11:11:13 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[21-Oct-2024 11:11:13 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[21-Oct-2024 11:11:13 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[21-Oct-2024 11:11:13 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[21-Oct-2024 11:11:13 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[21-Oct-2024 11:11:13 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[21-Oct-2024 14:27:36 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[21-Oct-2024 14:27:36 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[21-Oct-2024 14:27:36 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[21-Oct-2024 14:27:36 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
+[21-Oct-2024 14:27:36 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 84
+[21-Oct-2024 14:27:36 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Gregory\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 85
